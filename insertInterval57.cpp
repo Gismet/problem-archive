@@ -4,6 +4,7 @@
  * Insert the interval in the right place.
  * Then merge the intervals
  * Time: O(n)
+ * Note: This is a little silly problem.
  */
 
 vv<vv<int>> insert(vv<vv<int>> &intervals, vv<int> &newInterval)

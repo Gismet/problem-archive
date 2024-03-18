@@ -1,11 +1,11 @@
 #include "template.hpp"
 
 /**
- * Note: A set of intervals in which each pair of intervals share a common point (overlap) can be 
+ * Note: A set of intervals in which each pair of intervals shares a common point (overlap) can be 
  * burst with a single arrow
  *    [3     8]
  * [1     6]
- * [    4   7]
+ *     [4   7]
  * The above three intervals have an overlapping interval [4 6]. Shoot an arrow at any point in this interval
  * to burst all of the three balloons
  */

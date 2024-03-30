@@ -1,5 +1,15 @@
 #include "template.hpp"
 
+/*equivalent proble: count the number of subarrays with at most k distinct elements*/
+
+//Expand the window as long as it meets the codition
+//For each window, calcualte r - l + 1, which gives the number of such subarrays ending at r 
+//and starting at any index from l to r
+//To find only the subarrays with exactly k distinct elements, use the following
+// #subarrays with exactly k distinct elements = #subarrays with at most k distinct elements - #subarrays with at most k - 1 distinct subarrays
+//This isolates the subarrays with exactly k distinct elements from those with at most k distinct elements
+
+
 int withAtMostK(vv<int> &nums, int k)
 {
     int res = 0, l = 0, n = int(nums.size()), x = 0;
